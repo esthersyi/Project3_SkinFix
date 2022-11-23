@@ -1,0 +1,246 @@
+body {
+    background-color: #FFF8F0;
+}
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    padding: 1%;
+    text-align: center;
+}
+
+.logo img{
+    /* width: 100%; */
+    height: 100%;
+    cursor: pointer;
+}
+
+header {
+    padding: .5px;
+    background-color: #E0DBD5;
+    width: 100%;
+    /* outline: 3px solid red; */
+}
+
+header ul {
+    color: black;
+}
+
+header li {
+    list-style-type: none;
+    padding: 0px 20px;
+    /* outline: 3px solid red; */
+}
+
+.navLinks {
+    cursor: pointer;
+}
+
+.navigation {
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.heroImg {
+    /* outline: 3px solid red; */
+    background-image: url(../images/SkinFix\ Desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    /* background-color: #FCFAF3; */
+    text-align: center;
+    color: #black;
+    background-color: transparent;
+    /* outline: 3px solid red; */
+}
+
+button {
+    background-color: #98A06E;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    width: 200px; 
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#takeQuiz {
+    margin: 0 auto;
+}
+
+#browse {
+    cursor: pointer;
+}
+
+footer {
+    background-color: #6B705C;
+    padding: 10px;
+    text-align: center;
+    /* border-top: #ADC178; */
+}
+
+footer ul{
+    list-style: none;
+    padding-left: 10px;
+    text-align: center;
+    color: white;
+}
+
+footer li {
+    display: inline-block;
+    padding: 0px 7px;
+}
+
+/* Unit 18: My UX Skills & My Work Section */
+
+/* My UX Skills */
+
+.howWork {
+    background-color: #A5A58D;
+    padding: 15px;
+}
+
+.flexContainer {
+    display: flex;
+}
+
+.skillContainer {
+    padding: 15px;
+    margin: 30px;
+    /* outline: 3px solid red; */
+}
+
+.flexChild {
+    width: 33%;
+    padding: 5px;
+    margin: 15px;
+    /* outline: 3px solid red; */
+}
+
+.flexChild img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Featured Prducts */
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "exfoliant exfoliantDescription"
+    "tonerDescription toner";
+    padding: 15px;
+    margin: 100px;
+    align-items: center;
+    /* outline: 3px solid red; */
+}
+
+#exfoliant {
+    grid-area: exfoliant;
+}
+
+#exfoliantDescription {
+    grid-area: exfoliantDescription;
+    text-align: center;
+    /* align-items: center; */
+    /* outline: 3px solid red; */
+}
+
+#toner {
+    grid-area: toner;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* outline: 3px solid red; */
+}
+
+#tonerDescription {
+    grid-area: tonerDescription;
+    text-align: center;
+    /* vertical-align: center; */
+    /* outline: 3px solid red; */
+}
+
+.workGrid img {
+    width: 300px;
+    padding: 15px;
+    margin: 20px;
+    /* outline: 3px solid red; */
+}
+
+.projectButton {
+    display: grid;
+    margin: 0 auto;
+    /* outline: 3px solid red; */
+}
+
+@media only screen and (max-width: 800px) {
+    .workGrid {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "exfoliant" 
+            "exfoliantDescription"
+            "toner" 
+            "tonerDescription";
+        text-align: center;
+    }
+    .skillContainer {
+        flex-direction: column;
+    }
+    .flexChild {
+        width: 100%;
+        text-align: center;
+    }
+    .content {
+        text-align: center;
+    }
+}
+
+.viewAll {
+    text-align: center;
+    cursor: pointer;
+}
+
+h1 {
+    margin: 50px;
+    font-size: 45px;
+    /* text-align: center; */
+}
+
+h2 {
+    padding: 0px 50px;
+    font-size: 36px;
+    text-align: center;
+    /* font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Serif Telugu', serif;
+    font-family: 'Open Sans', sans-serif; */
+}
+
+h3 {
+    font-size: 22px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 28px;
+    text-align: center;
+    /* font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Serif Telugu', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif; */
+}
+
+p {
+    font-size: 18px;
+    line-height: 50x;
+}
