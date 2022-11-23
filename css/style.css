@@ -148,6 +148,8 @@ footer li {
 
 #exfoliant {
     grid-area: exfoliant;
+    align-content: center;
+    /* outline: 3px solid red; */
 }
 
 #exfoliantDescription {
@@ -172,17 +174,12 @@ footer li {
 }
 
 .workGrid img {
-    width: 300px;
+    width: 65%;
     padding: 15px;
-    margin: 20px;
+    /* margin: 5px; */
     /* outline: 3px solid red; */
 }
 
-.projectButton {
-    display: grid;
-    margin: 0 auto;
-    /* outline: 3px solid red; */
-}
 
 @media only screen and (max-width: 800px) {
     .workGrid {
